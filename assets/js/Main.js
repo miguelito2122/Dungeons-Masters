@@ -40,6 +40,7 @@ function startGame(className) {
     document.getElementById('classe-image').style.display = 'flex';
 
     const classImageDiv = document.getElementById('classe-image');
+    const imageUrl = document.getElementById('');
     classImageDiv.classList.add(className);
 
     let imageUrl = '';
