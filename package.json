@@ -1,0 +1,11 @@
+{
+  "name": "dungeons-masters",
+  "version": "1.0.0",
+  "description": "Jogo de RPG",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}

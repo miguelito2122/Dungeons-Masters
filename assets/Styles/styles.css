@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 35px;
+    padding: 15px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3); 
+    color: white; 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    transition: background 0.3s ease, transform 0.3s ease; 
+    font-weight: bold; 
+    overflow: hidden;
+}
+
+button:hover {
+    transform: scale(1.2); /* Escala o botão */
+    background: linear-gradient(135deg, #0056b3, #004080);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    background: linear-gradient(135deg, #004080, #003366); 
+    transform: scale(1); 
+}
+
+button span {
+    transition: transform 0.3s ease; 
+}
+
+span {
+    transform: scale(1);
+    display: inline-block;
+}
+
+#main-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#start-game {
+    transform-origin: center;
+    padding: 15px 25px;
+    border: 2px solid #000000;
+}
+
+.class-container {
+    display: flex;
+    justify-content: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#class-selection {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+#class-selection span {
+    margin-bottom: 10px;
+}
+
+#class-selection button {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 150px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: background 0.3s, transform 0.3s;
+}
+
+#class-selection img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
+}
+
+#warrior {
+    background: linear-gradient(90deg, rgba(0,110,179,0.7721463585434174) 0%, rgba(19,204,213,1) 50%, rgba(0,67,255,1) 100%);
+}
+
+#archer {
+    background: linear-gradient(90deg, rgba(0,179,82,0.7721463585434174) 0%, rgba(41,213,19,1) 50%, rgba(157,255,0,0.6741071428571428) 100%);
+}
+
+#mage {
+    background: linear-gradient(90deg, rgba(145,0,179,0.41360294117647056) 0%, rgba(213,19,77,1) 50%, rgba(143,0,255,1) 100%);
+}
+
+
+#game-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#classe img {
+    display: none;
+}
